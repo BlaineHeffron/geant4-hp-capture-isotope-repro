@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(hpiso CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Geant4 REQUIRED)
+add_executable(hpiso hpiso.cc)
+target_link_libraries(hpiso ${Geant4_LIBRARIES})
